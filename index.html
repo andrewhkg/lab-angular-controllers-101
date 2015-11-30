@@ -11,7 +11,7 @@
   <h2>Exhibits:</h2>
   <img width="550" alt="picture" src="exhibits.jpg">
   <h3>
-  {{image}}
+  <img src:{{image}}>
   <br>
   {{exhibits}}
   <br/>
@@ -19,10 +19,10 @@
   </h3>
   </div>
 
-<div ng-controller="InfoCotroller">
+<section id="opening" ng-controller="HourCotroller">
 <h1>General Info</h1>
 <h3>Hours:</h3>
-{{mon}}
+{{monday}}
 <br>
 {{tuesday}}
 <br>
@@ -35,12 +35,11 @@
 {{saturday}}
 <br>
 {{sunday}}
-
-
-</div>
+</section>
 
   <div ng-controller="InfoCotroller">
-
+  <h1>Donor Information</h1>
+{{email}}
   </div>
 
 
