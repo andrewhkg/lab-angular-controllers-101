@@ -9,9 +9,9 @@
 <h1> Moscow Museum of Modern Art</h1>
   <div ng-controller="ExhibitController as home">
   <h2>Exhibits:</h2>
-  <img width="550" alt="picture" src="exhibits.jpg">
+  <!-- <img width="550" alt="picture" src="exhibits.jpg"> -->
   <h3>
-  <img src:{{image}}>
+  <img ng-src='{{image}}'>
   <br>
   {{exhibits}}
   <br/>
