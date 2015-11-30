@@ -1,0 +1,48 @@
+<html ng-app="myMuseumApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Moscow Museum of Modern Art</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+   <script src="app.js"></script>
+  </head>
+  <body>
+<h1> Moscow Museum of Modern Art</h1>
+  <div ng-controller="ExhibitController as home">
+  <h2>Exhibits:</h2>
+  <img width="550" alt="picture" src="exhibits.jpg">
+  <h3>
+  {{image}}
+  <br>
+  {{exhibits}}
+  <br/>
+  {{name}}
+  </h3>
+  </div>
+
+<div ng-controller="InfoCotroller">
+<h1>General Info</h1>
+<h3>Hours:</h3>
+{{mon}}
+<br>
+{{tuesday}}
+<br>
+{{wednesday}}
+<br>
+{{thursday}}
+<br>
+{{friday}}
+<br>
+{{saturday}}
+<br>
+{{sunday}}
+
+
+</div>
+
+  <div ng-controller="InfoCotroller">
+
+  </div>
+
+
+  </body>
+</html>
